@@ -47,16 +47,17 @@ let objectTwo = {
 
 // ------------------------------------------------------------ //
 
+let result;
 // Without Type Checking
-let result = equalChecker(objectOne, objectTwo);
+result = equalChecker(objectOne, objectTwo);
 console.log(result);   // true
 
 // With Type Checking
-let result = equalChecker(objectOne, objectTwo, true);
+result = equalChecker(objectOne, objectTwo, true);
 console.log(result);   // false
 
 // With Error Message
-let result = equalChecker(objectOne, objectTwo, true , true);
+result = equalChecker(objectOne, objectTwo, true , true);
 console.log(result);   // [ false , '2 and 2 : different values or types'];
 
 ```
