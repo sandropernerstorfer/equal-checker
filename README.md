@@ -1,0 +1,1 @@
+# equal-checker-npm
