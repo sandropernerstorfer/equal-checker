@@ -1,25 +1,94 @@
-# Recursive Deep-Check JS Function
-### Compare values, objects or arrays
-___
-Comparing two objects or arrays can be tricky since even though they might share the same properties and values, just comparing them will of course always return false.
+<h1>equal-checker</h1>
+<p>
+  <a href="https://www.npmjs.com/package/equal-checker" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/equal-checker.svg">
+  </a>
+  <a href="https://github.com/sandropernerstorfer/equal-checker-npm#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/sandropernerstorfer/equal-checker-npm/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
+<p>
+  Lightweight function to check if two Objects, Arrays, or single Values are equal.<br>
+  Uses Recursion to check any combination and level of NESTING.
+</p>
+## Install
 
-This function will take 4 parameters :
+```sh
+npm install equal-checker
+```
 
-    2 * value, object or array
-    1 * optional boolean for type checking
-    1 * optional boolean: false returns a boolean only, true returns an array with boolean and error message
+## Usage
 
-For example if we pass two objects, the function will first compare the length, then loop through the properties, and finally the values.
+```sh
+const equalChecker = require('equal-checker');
 
-Lets say these objects have another object or array nested inside.
-The function calls itself via recursion, passing these 'roadblocks' as parameters to deep-check them.
 
-This can go as deep as we want and works with nested objects and arrays.
+// -- Test Objects ( types are different in array property ) -- //
 
-Once a difference is detected and checked, the function will return false, or with errMsg set to true, it returns an array containing a boolean + error message ).
+let objectOne = {
+    name : 'john',
+    age : 100,
+    looks : 'good',
+    object: {a:1,b:[1,{value:2}]},
+    array : [1,2,3],
+};
 
-Otherwise it will return true if everything passed the check.
+let objectTwo = {
+    name : 'john',
+    age : 100,
+    looks : 'good',
+    object: {a:1,b:[1,{value:2}]},
+    array : [1,'2',3]
+};
 
-The third parameter (checkType) is by default 'false' so it will only compare the value using the == operator.
+// ------------------------------------------------------------ //
 
-The fourth parameter (errMsg) is by default 'false' so it will by default only return a boolean.
+// Without Type Checking
+let result = equalChecker(objectOne, objectTwo);
+console.log(result);   // true
+
+// With Type Checking
+let result = equalChecker(objectOne, objectTwo, true);
+console.log(result);   // false
+
+// With Error Message
+let result = equalChecker(objectOne, objectTwo, true , true);
+console.log(result);   // [ false , '2 and 2 : different values or types'];
+
+```
+
+## Infos
+
+The ```equalChecker()``` function takes 4 parameters.
+* Value 1
+* Value 2
+* Boolean for Type Checking ---- ( optional, default is false )
+* Boolean for Error Messages --- ( optional, default is false )
+---
+##### If the third parameter (typeCheck) is set to true:
+* will compare values AND data type
+##### If the fourth parameter (errMsg) is set to true and the check returns false:
+* will, instead of returning only a false Boolean, return an Array
+* the Array will contain the false Boolean and an Error Message explaining the difference.
+---
+## Author
+👤 **Sandro Pernerstorfer**
+* Website: https://sandropernerstorfer.netlify.app/
+* Github: [@sandropernerstorfer](https://github.com/sandropernerstorfer)
+
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome!<br />Feel free to check out the [issues page](https://github.com/sandropernerstorfer/equal-checker-npm/issues).
+
+## Thank you for reading through the description
+
+Feel free to star this project if it helped you !
+
+## 📝 License
+
+Copyright © 2021 [Sandro Pernerstorfer](https://github.com/sandropernerstorfer).<br />
+This project is [ISC](https://github.com/sandropernerstorfer/equal-checker-npm/blob/master/LICENSE) licensed.
+
+***
