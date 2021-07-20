@@ -1,12 +1,18 @@
 {
   "name": "equal-checker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight function to check if two Objects, Arrays, or single Values are equal. Uses Recursion to check any combination and level of NESTING.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["equal check", "deep check", "nested check", "comparison", "deep comparison"],
+  "keywords": [
+    "equal check",
+    "deep check",
+    "nested check",
+    "comparison",
+    "deep comparison"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sandropernerstorfer/equal-checker-npm.git"
