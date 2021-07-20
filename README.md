@@ -1,5 +1,5 @@
 # Recursive Deep-Check JS Function
-### –– Compare values, objects or arrays
+### Compare values, objects or arrays
 ___
 Comparing two objects or arrays can be tricky since even though they might share the same properties and values, just comparing them will of course always return false.
 
