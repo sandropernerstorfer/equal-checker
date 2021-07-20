@@ -1,0 +1,19 @@
+{
+  "name": "equal-checker",
+  "version": "1.0.0",
+  "description": "Function to check if two Objects, Arrays, single Values, or all of these nested inside each other in any way, are equal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandropernerstorfer/equal-checker-npm.git"
+  },
+  "author": "Sandro Pernerstorfer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandropernerstorfer/equal-checker-npm/issues"
+  },
+  "homepage": "https://github.com/sandropernerstorfer/equal-checker-npm#readme"
+}
