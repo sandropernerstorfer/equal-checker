@@ -6,9 +6,6 @@
   <a href="https://github.com/sandropernerstorfer/equal-checker-npm#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/sandropernerstorfer/equal-checker-npm/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
 </p>
 <p>
   Lightweight function to check if two Objects, Arrays, or single Values are equal.<br>
