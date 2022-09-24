@@ -9,7 +9,7 @@
 </p>
 <p>
   Lightweight function to check if two Objects, Arrays, or single Values are equal.<br>
-  Uses Recursion to check any combination and level of NESTING.
+  Uses Recursion to check any combination and level of nesting.
 </p>
 
 ## Install
