@@ -1,6 +1,6 @@
 {
   "name": "equal-checker",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Lightweight function to check if two Objects, Arrays, or single Values are equal. Uses Recursion to check any combination and level of NESTING.",
   "main": "index.js",
   "scripts": {
