@@ -8,8 +8,8 @@
   </a>
 </p>
 <p>
-  Lightweight function to check if two Objects, Arrays, or single Values are equal.<br>
-  Uses Recursion to check any combination and level of nesting.
+  Lightweight function to check if two objects, arrays, or standalone values are equal.<br>
+  Utilizes recursion to check any level of nesting.
 </p>
 
 ## Install
@@ -59,14 +59,14 @@ console.log(result);   // [ false , '2 and 2 : different values or types'];
 
 ## Infos
 The ```equalChecker()``` function takes 4 parameters.
-* Value 1
-* Value 2
+* value 1
+* value 2
 * (optional - default = false) Boolean for type checking
 * (optional - default = false) Boolean for error messages
 ---
-##### If the third parameter (typeCheck) is set to true:
+##### Third parameter (typeCheck) is set to true:
 * will compare values AND data type.
-##### If the fourth parameter (errMsg) is set to true and the check returns false:
+##### Fourth parameter (errMsg) is set to true and the check returns false:
 * will, instead of returning only a false Boolean, return an Array.
 * the array will contain the false boolean and an error message explaining the difference.
 ---
