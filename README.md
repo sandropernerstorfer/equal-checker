@@ -54,14 +54,14 @@ console.log(result);   // [ false , '2 and 2 : different values or types'];
 ```
 
 ## Infos
-The ```equalChecker()``` function takes 4 parameters.
-* value 1
-* value 2
-* (optional - default = false) Boolean for type checking
-* (optional - default = false) Boolean for error messages
+The ```equalChecker()``` function takes 4 arguments:
+* Value 1
+* Value 2
+* Boolean for type checking  (optional - default = false)
+* Boolean for error messages (optional - default = false)
 ---
-##### Third parameter (typeCheck) is set to true:
+##### If third argument (typeCheck) is set to true:
 * will compare values AND data type.
-##### Fourth parameter (errMsg) is set to true and the check returns false:
-* will, instead of returning only a false Boolean, return an Array.
-* the array will contain the false boolean and an error message explaining the difference.
+##### If fourth argument (errMsg) is set to true & the check returns false:
+* will, instead of returning only a boolean, return an Array.
+* the array will contain [0] the false boolean and [1] an error message explaining the difference.
